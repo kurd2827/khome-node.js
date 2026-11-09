@@ -1,7 +1,5 @@
 const express = require('express');
 const app = express();
-
-// دریافت پورت مستقیما از سیستم ابری
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
