@@ -1,5 +1,5 @@
 {
-  "name": "mardinblo-app",
+  "name": "mardin-node-test",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
