@@ -1,18 +1,13 @@
 const express = require('express');
-const config = require('./config');
-
 const app = express();
-app.use(express.json());
+
+// دریافت پورت مستقیما از سیستم ابری
+const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.json({
-    status: 'success',
-    message: 'Server is up and connected perfectly on Meera Host!',
-    environment: config.app.env,
-  });
+  res.send('Server is up and working perfectly on the cloud!');
 });
 
-// اضافه شدن 0.0.0.0 مشکل PodInitializing را در هاست ابری حل می‌کند
-app.listen(config.app.port, '0.0.0.0', () => {
-  console.log(`Server is running on port ${config.app.port}`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server listening on 0.0.0.0:${port}`);
 });
