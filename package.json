@@ -1,11 +1,11 @@
 {
-  "name": "mardin-node-test",
+  "name": "mardin-xray-node",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "adm-zip": "^0.5.10"
   }
 }
